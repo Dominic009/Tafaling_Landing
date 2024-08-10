@@ -3,18 +3,19 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="flex min-h-screen bg-gradient-to-b from-[#004A99] to-[#00B4DB]">
-      <div className="opacity-20 absolute -left-52 scale-125">
-        <Image
-          src="/Pattern.png"
-          width={900}
-          height={500}
-          alt="Pattern"
-        ></Image>
-      </div>
+      <div className="opacity-20 absolute -left-52 scale-125"></div>
 
-      <div className="grid grid-cols-2 w-full items-center justify-center">
+      <div
+        className="grid grid-cols-1 lg:grid-cols-2 w-full items-center justify-center"
+        style={{
+          backgroundImage: `url('/Pattern 2.png')`,
+          backgroundSize: '1700px',
+          backgroundPosition: "-600px -150px",
+          backgroundRepeat: 'no-repeat',
+        }}
+      >
         {/* Left side */}
-        <div className="z-50 flex flex-col items-center border-r">
+        <div className="z-50 flex flex-col items-center lg:border-r scale-50 lg:scale-100">
           <h1 className="font-semibold text-[#08B7EB] text-4xl mb-3">
             Welcome to
           </h1>
@@ -28,7 +29,7 @@ export default function Home() {
         </div>
 
         {/* Rigth side */}
-        <div className="w-[60%] mx-auto z-50">
+        <div className="w-[90%] md:w-[70%] lg:w-[60%] mx-auto z-50">
           <div className="bg-gray-900/30 py-10 rounded-xl flex flex-col items-center">
             <h1 className="text-3xl text-white border-b-4 border-[#008EAD] mb-8">
               Sign In
@@ -52,7 +53,7 @@ export default function Home() {
             </div>
 
             {/* Sign In button */}
-            <div className="flex items-center gap-1 w-[70%] mt-12">
+            <div className="flex items-center gap-1 w-[70%] mt-8">
               <input type="checkbox" />
               <p className="text-[#D6EAFF]/50">Remember Me</p>
             </div>
@@ -68,7 +69,7 @@ export default function Home() {
               <div className="border-b border-[#BFB0B0] w-[50%]"></div>
             </div>
 
-            <p className="text-center font-light text-gray-400">
+            <p className="text-center font-light text-gray-400 text-sm md:text-md">
               By clicking continue, you agree to Tafalings <br />{" "}
               <a href="#" className="text-gray-300">
                 User Agreement
@@ -93,7 +94,7 @@ export default function Home() {
                 ></Image>
                 Google
               </button>
-              <button className="bg-[#F2F2F2] w-[100%] py-2 px-4 rounded-md  text-xl">
+              <button className="bg-[#F2F2F2] w-[100%] py-2 px-4 rounded-md lg:text-xl">
                 Continue with other
               </button>
             </div>
@@ -101,7 +102,10 @@ export default function Home() {
 
           {/* Join Now link */}
           <h2 className="mt-7 text-white text-center text-lg">
-            New To Tafaling? <a href="#" className="text-[#025C70] font-semibold">JOIN NOW</a>
+            New To Tafaling?{" "}
+            <a href="#" className="text-[#025C70] font-semibold">
+              JOIN NOW
+            </a>
           </h2>
         </div>
       </div>

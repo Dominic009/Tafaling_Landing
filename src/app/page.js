@@ -8,7 +8,7 @@ export default function Home() {
       <div
         className="grid grid-cols-1 lg:grid-cols-2 w-full items-center justify-center"
         style={{
-          backgroundImage: `url('/Pattern 2.png')`,
+          backgroundImage: `url('/Pattern 3.png')`,
           backgroundSize: '1700px',
           backgroundPosition: "-600px -150px",
           backgroundRepeat: 'no-repeat',

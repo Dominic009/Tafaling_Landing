@@ -15,7 +15,7 @@ export default function Home() {
         }}
       >
         {/* Left side */}
-        <div className="z-50 flex flex-col items-center lg:border-r scale-50 lg:scale-100">
+        <div className="z-50 flex flex-col items-center justify-center lg:border-r scale-50 lg:scale-100 h-[50%]">
           <h1 className="font-semibold text-[#08B7EB] text-4xl mb-3">
             Welcome to
           </h1>
@@ -29,7 +29,7 @@ export default function Home() {
         </div>
 
         {/* Rigth side */}
-        <div className="w-[90%] md:w-[70%] lg:w-[60%] mx-auto z-50">
+        <div className="w-[90%] md:w-[70%] lg:w-[50%] mx-auto z-50">
           <div className="bg-gray-900/30 py-10 rounded-xl flex flex-col items-center">
             <h1 className="text-3xl text-white border-b-4 border-[#008EAD] mb-8">
               Sign In
@@ -47,7 +47,7 @@ export default function Home() {
                 type="password"
                 className="px-4 py-2 rounded-md outline-none"
               ></input>
-              <a href="#" className="text-[#D6EAFF]/50 -mt-5">
+              <a href="#" className="text-[#D6EAFF]/50 -mt-5 text-sm">
                 Forgotten password?
               </a>
             </div>
@@ -63,10 +63,10 @@ export default function Home() {
             </button>
 
             {/* Third party log in */}
-            <div className="w-[70%] mt-7 flex gap-2 items-center">
-              <div className="border-b border-[#BFB0B0] w-[50%]"></div>
-              <div className="text-[#D6EAFF]/50">or</div>
-              <div className="border-b border-[#BFB0B0] w-[50%]"></div>
+            <div className="w-[70%] mt-7 flex gap-2 items-center mb-3">
+              <div className="border-b border-[#BFB0B0] w-[33%]"></div>
+              <div className="text-[#D6EAFF]/50 flex-1 text-center">or continue with</div>
+              <div className="border-b border-[#BFB0B0] w-[33%]"></div>
             </div>
 
             <p className="text-center font-light text-gray-400 text-sm md:text-md">
@@ -84,7 +84,7 @@ export default function Home() {
               </a>
             </p>
 
-            <div className="flex gap-4 text-[#00B4DB] font-normal w-[90%] mt-5">
+            <div className="flex gap-4 text-[#00B4DB] font-normal w-[70%] mt-5">
               <button className="bg-[#F2F2F2] w-[100%] py-2 px-4 rounded-md text-xl flex justify-center items-center gap-2">
                 <Image
                   src="/google.png"
@@ -95,14 +95,14 @@ export default function Home() {
                 Google
               </button>
               <button className="bg-[#F2F2F2] w-[100%] py-2 px-4 rounded-md lg:text-xl">
-                Continue with other
+                Other
               </button>
             </div>
           </div>
 
           {/* Join Now link */}
           <h2 className="mt-7 text-white text-center text-lg">
-            New To Tafaling?{" "}
+            New to Tafaling?{" "}
             <a href="#" className="text-[#025C70] font-semibold">
               JOIN NOW
             </a>

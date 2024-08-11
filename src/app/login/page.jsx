@@ -1,4 +1,4 @@
-import PrimaryBtn from "@/components/PrimaryBtn";
+import PrimaryBtn from "@/shared-components/PrimaryBtn";
 import Image from "next/image";
 import React from "react";
 
@@ -61,7 +61,7 @@ const page = () => {
             </div>
 
             {/* Sign in btn */}
-            <PrimaryBtn text={"Sign In"} width={'70%'}/>
+            <PrimaryBtn text={"Sign In"} width={"70%"} />
 
             {/* Third party log in */}
             <div className="w-[70%] mt-7 flex gap-2 items-center mb-3">

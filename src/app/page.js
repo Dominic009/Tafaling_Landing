@@ -1,5 +1,5 @@
-import PrimaryBtn from "@/components/PrimaryBtn";
-import SecondaryBtn from "@/components/SecondaryBtn";
+import PrimaryBtn from "@/shared-components/PrimaryBtn";
+import SecondaryBtn from "@/shared-components/SecondaryBtn";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -28,11 +28,15 @@ export default function Home() {
 
         <div className="flex w-[50%] mt-10">
           <Link href={"/login"} className=" w-full flex justify-center">
-            <PrimaryBtn text={"Go to Sign In"} icon width={'80%'}></PrimaryBtn>
+            <PrimaryBtn text={"Go to Sign In"} icon width={"80%"}></PrimaryBtn>
           </Link>
 
           <Link href={"/register"} className=" w-full flex justify-center">
-            <SecondaryBtn text={"Go to Sign Up"} icon width={'80%'}></SecondaryBtn>
+            <SecondaryBtn
+              text={"Go to Sign Up"}
+              icon
+              width={"80%"}
+            ></SecondaryBtn>
           </Link>
         </div>
       </div>

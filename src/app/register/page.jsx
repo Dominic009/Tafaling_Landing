@@ -18,7 +18,7 @@ const page = () => {
         }}
       >
         {/* Left side */}
-        <div className="z-50 flex flex-col items-center justify-center lg:border-l scale-50 lg:scale-100 h-[50%] order-last">
+        <div className="z-50 flex flex-col items-center justify-center lg:border-l scale-50 lg:scale-100 h-[50%] lg:order-last">
           <h1 className="font-semibold text-[#08B7EB] text-4xl mb-3">
             Welcome to
           </h1>
@@ -76,7 +76,7 @@ const page = () => {
             </div>
 
             {/* Sign In button */}
-            <div className="flex items-center gap-1 w-[80%] mt-8 mb-2">
+            <div className="flex items-center gap-2 w-[80%] mt-8 mb-2">
               <input type="checkbox" />
               <p className="text-[#D6EAFF]/50">
                 Accept

@@ -1,112 +1,39 @@
+import PrimaryBtn from "@/components/PrimaryBtn";
+import SecondaryBtn from "@/components/SecondaryBtn";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen bg-gradient-to-b from-[#004A99] to-[#00B4DB]">
-      <div className="opacity-20 absolute -left-52 scale-125"></div>
+    <main className="min-h-screen bg-gradient-to-b from-[#004A99] to-[#00B4DB] p-5">
+      <div>
+        <Image
+          src="/Tafaling logo.png"
+          alt="Image"
+          width={200}
+          height={100}
+          className="mix-blend-plus-darker"
+        ></Image>
+      </div>
+      <div className="h-[80vh] flex flex-col items-center justify-center">
+        <h1 className="text-7xl font-semibold text-white">
+          Welcome to <span className="text-[#26d5fc]">Tafaling.com</span>
+        </h1>
 
-      <div
-        className="grid grid-cols-1 lg:grid-cols-2 w-full items-center justify-center"
-        style={{
-          backgroundImage: `url('/Pattern 3.png')`,
-          backgroundSize: '1700px',
-          backgroundPosition: "-600px -150px",
-          backgroundRepeat: 'no-repeat',
-        }}
-      >
-        {/* Left side */}
-        <div className="z-50 flex flex-col items-center justify-center lg:border-r scale-50 lg:scale-100 h-[50%]">
-          <h1 className="font-semibold text-[#08B7EB] text-4xl mb-3">
-            Welcome to
-          </h1>
-          <Image
-            src="/Tafaling logo.png"
-            alt="Image"
-            width={500}
-            height={500}
-            className="mix-blend-plus-darker"
-          ></Image>
-        </div>
+        <p className="text-2xl text-center mt-2 text-gray-200">
+          Your journey with us starts here. Whether you&apos;re new or
+          returning, we&apos;re excited to have you. <br />
+          Please choose an option below to get started :
+        </p>
 
-        {/* Rigth side */}
-        <div className="w-[90%] md:w-[70%] lg:w-[50%] mx-auto z-50">
-          <div className="bg-gray-900/30 py-10 rounded-xl flex flex-col items-center">
-            <h1 className="text-3xl text-white border-b-4 border-[#008EAD] mb-8">
-              Sign In
-            </h1>
+        <div className="flex w-[50%] mt-10">
+          <Link href={"/login"} className=" w-full flex justify-center">
+            <PrimaryBtn text={"Go to Sign In"} icon width={'80%'}></PrimaryBtn>
+          </Link>
 
-            {/* Input fields */}
-            <div className="flex flex-col gap-5 w-[70%]">
-              <input
-                placeholder="Your Email"
-                type="text"
-                className="px-4 py-2 rounded-md outline-none"
-              ></input>
-              <input
-                placeholder="Your Password"
-                type="password"
-                className="px-4 py-2 rounded-md outline-none"
-              ></input>
-              <a href="#" className="text-[#D6EAFF]/50 -mt-5 text-sm">
-                Forgotten password?
-              </a>
-            </div>
-
-            {/* Sign In button */}
-            <div className="flex items-center gap-1 w-[70%] mt-8">
-              <input type="checkbox" />
-              <p className="text-[#D6EAFF]/50">Remember Me</p>
-            </div>
-
-            <button className="bg-[#00B4DB] w-[70%] py-2 rounded-md text-white font-bold text-2xl">
-              Sign In
-            </button>
-
-            {/* Third party log in */}
-            <div className="w-[70%] mt-7 flex gap-2 items-center mb-3">
-              <div className="border-b border-[#BFB0B0] w-[33%]"></div>
-              <div className="text-[#D6EAFF]/50 flex-1 text-center">or continue with</div>
-              <div className="border-b border-[#BFB0B0] w-[33%]"></div>
-            </div>
-
-            <p className="text-center font-light text-gray-400 text-sm md:text-md">
-              By clicking continue, you agree to Tafalings <br />{" "}
-              <a href="#" className="text-gray-300">
-                User Agreement
-              </a>
-              ,{" "}
-              <a href="#" className="text-gray-300">
-                Privacy Policy{" "}
-              </a>{" "}
-              &{" "}
-              <a href="#" className="text-gray-300">
-                Cookie Policy
-              </a>
-            </p>
-
-            <div className="flex gap-4 text-[#00B4DB] font-normal w-[70%] mt-5">
-              <button className="bg-[#F2F2F2] w-[100%] py-2 px-4 rounded-md text-xl flex justify-center items-center gap-2">
-                <Image
-                  src="/google.png"
-                  alt="google"
-                  width={30}
-                  height={50}
-                ></Image>
-                Google
-              </button>
-              <button className="bg-[#F2F2F2] w-[100%] py-2 px-4 rounded-md lg:text-xl">
-                Other
-              </button>
-            </div>
-          </div>
-
-          {/* Join Now link */}
-          <h2 className="mt-7 text-white text-center text-lg">
-            New to Tafaling?{" "}
-            <a href="#" className="text-[#025C70] font-semibold">
-              JOIN NOW
-            </a>
-          </h2>
+          <Link href={"/register"} className=" w-full flex justify-center">
+            <SecondaryBtn text={"Go to Sign Up"} icon width={'80%'}></SecondaryBtn>
+          </Link>
         </div>
       </div>
     </main>

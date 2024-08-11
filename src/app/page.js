@@ -16,28 +16,36 @@ export default function Home() {
         ></Image>
       </div>
       <div className="h-[80vh] flex flex-col items-center justify-center">
-        <h1 className="text-7xl font-semibold text-white">
+        <h1 className="text-3xl md:text-5xl lg:text-7xl font-semibold text-white text-center">
           Welcome to <span className="text-[#26d5fc]">Tafaling.com</span>
         </h1>
 
-        <p className="text-2xl text-center mt-2 text-gray-200">
+        <p className="text-lg md:text-xl lg:text-2xl text-center mt-2 text-gray-300">
           Your journey with us starts here. Whether you&apos;re new or
           returning, we&apos;re excited to have you. <br />
-          Please choose an option below to get started :
         </p>
 
-        <div className="flex w-[50%] mt-10">
-          <Link href={"/login"} className=" w-full flex justify-center">
-            <PrimaryBtn text={"Go to Sign In"} icon width={"80%"}></PrimaryBtn>
-          </Link>
+        <div className="w-[90%] lg:w-[50%] mt-12 flex flex-col justify-center items-center">
+          <p className="text-lg md:text-xl lg:text-xl text-center mt-2 text-gray-100 mb-5">
+            Please choose an option below to get started :
+          </p>
+          <div className="flex flex-col gap-3 lg:flex-row w-[90%] lg:w-[70%]">
+            <Link href={"/login"} className=" w-full flex justify-center">
+              <PrimaryBtn
+                text={"Go to Sign In"}
+                icon
+                width={"80%"}
+              ></PrimaryBtn>
+            </Link>
 
-          <Link href={"/register"} className=" w-full flex justify-center">
-            <SecondaryBtn
-              text={"Go to Sign Up"}
-              icon
-              width={"80%"}
-            ></SecondaryBtn>
-          </Link>
+            <Link href={"/register"} className=" w-full flex justify-center">
+              <SecondaryBtn
+                text={"Go to Sign Up"}
+                icon
+                width={"80%"}
+              ></SecondaryBtn>
+            </Link>
+          </div>
         </div>
       </div>
     </main>

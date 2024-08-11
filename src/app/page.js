@@ -1,5 +1,5 @@
-import PrimaryBtn from "@/shared-components/PrimaryBtn";
-import SecondaryBtn from "@/shared-components/SecondaryBtn";
+import PrimaryBtn from "@/components/PrimaryBtn";
+import SecondaryBtn from "@/components/SecondaryBtn";
 import Image from "next/image";
 import Link from "next/link";
 

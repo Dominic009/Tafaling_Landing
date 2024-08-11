@@ -1,4 +1,4 @@
-import PrimaryBtn from "@/shared-components/PrimaryBtn";
+import PrimaryBtn from "@/components/PrimaryBtn";
 import Image from "next/image";
 import React from "react";
 

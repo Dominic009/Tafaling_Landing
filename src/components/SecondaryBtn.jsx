@@ -8,7 +8,7 @@ const SecondaryBtn = ({ text, icon, width }) => {
       style={{ width }}
     >
       {icon && (
-        <Image src={"/register.png"} alt="login" width={30} height={50}></Image>
+        <Image src={"/register.png"} alt="login" width={30} height={30}></Image>
       )}
       {text}
     </button>

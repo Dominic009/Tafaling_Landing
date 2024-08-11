@@ -18,7 +18,7 @@ const page = () => {
         }}
       >
         {/* Left side */}
-        <div className="z-50 flex flex-col items-center justify-center lg:border-r scale-50 lg:scale-100 h-[50%]">
+        <div className="z-50 flex flex-col items-center justify-center lg:border-l scale-50 lg:scale-100 h-[50%] order-last">
           <h1 className="font-semibold text-[#08B7EB] text-4xl mb-3">
             Welcome to
           </h1>
@@ -35,11 +35,17 @@ const page = () => {
         <div className="w-[90%] md:w-[70%] lg:w-[50%] mx-auto z-50">
           <div className="bg-gray-900/30 py-10 rounded-xl flex flex-col items-center">
             <h1 className="text-3xl text-white border-b-4 border-[#008EAD] mb-8">
-              Sign In
+              Sign Up
             </h1>
 
             {/* Input fields */}
-            <div className="flex flex-col gap-5 w-[80%]">
+            <div className="flex flex-col gap-7 w-[80%]">
+              {/* Name */}
+              <input
+                placeholder="Your Name"
+                type="text"
+                className="px-4 py-2 rounded-md outline-none"
+              ></input>
               {/* Email */}
               <input
                 placeholder="Your Email"
@@ -61,65 +67,39 @@ const page = () => {
                   className="absolute right-3 top-3"
                 ></Image>
               </div>
-              <a href="#" className="text-[#D6EAFF]/50 -mt-5 text-sm">
-                Forgotten password?
-              </a>
+              {/* Confirm Password */}
+              <input
+                placeholder="Confirm Password"
+                type="password"
+                className="px-4 py-2 rounded-md outline-none"
+              ></input>
             </div>
 
             {/* Sign In button */}
-            <div className="flex items-center gap-1 w-[80%] mt-8">
+            <div className="flex items-center gap-1 w-[80%] mt-8 mb-2">
               <input type="checkbox" />
-              <p className="text-[#D6EAFF]/50">Remember Me</p>
+              <p className="text-[#D6EAFF]/50">
+                Accept
+                <a href="#" className="text-gray-300">
+                  {" "}
+                  Terms & Conditions
+                </a>{" "}
+                and{" "}
+                <a href="#" className="text-gray-300">
+                  Privacy & Policy
+                </a>
+              </p>
             </div>
 
             {/* Sign in btn */}
-            <PrimaryBtn text={"Sign In"} width={"80%"} />
-
-            {/* Third party log in */}
-            <div className="w-[80%] mt-7 flex gap-2 items-center mb-3">
-              <div className="border-b border-[#BFB0B0] w-[33%]"></div>
-              <div className="text-[#D6EAFF]/50 flex-1 text-center">
-                or continue with
-              </div>
-              <div className="border-b border-[#BFB0B0] w-[33%]"></div>
-            </div>
-
-            <p className="text-center font-light text-gray-400 text-sm md:text-md">
-              By clicking continue, you agree to Tafalings <br />{" "}
-              <a href="#" className="text-gray-300">
-                User Agreement
-              </a>
-              ,{" "}
-              <a href="#" className="text-gray-300">
-                Privacy Policy{" "}
-              </a>{" "}
-              &{" "}
-              <a href="#" className="text-gray-300">
-                Cookie Policy
-              </a>
-            </p>
-
-            <div className="flex gap-4 text-[#00B4DB] font-normal w-[70%] mt-5">
-              <button className="bg-[#F2F2F2] w-[100%] py-2 px-4 rounded-md text-lg flex justify-center items-center gap-2">
-                <Image
-                  src="/google.png"
-                  alt="google"
-                  width={25}
-                  height={50}
-                ></Image>
-                Google
-              </button>
-              <button className="bg-[#F2F2F2] w-[100%] py-2 px-4 rounded-md lg:text-lg">
-                Other
-              </button>
-            </div>
+            <PrimaryBtn text={"Sign Up"} width={"80%"} />
           </div>
 
           {/* Join Now link */}
           <h2 className="mt-7 text-white text-center text-xl font-light">
-            New to Tafaling?{" "}
-            <Link href="/register" className="text-[#025C70] font-semibold">
-              JOIN NOW
+            Already Have an acocunt?{" "}
+            <Link href="/login" className="text-[#025C70] font-semibold">
+              SIGN IN
             </Link>
           </h2>
         </div>

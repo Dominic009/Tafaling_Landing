@@ -8,7 +8,7 @@ const PrimaryBtn = ({ text, icon, width }) => {
       style={{ width }}
     >
       {icon && (
-        <Image src={"/login.png"} alt="login" width={35} height={50}></Image>
+        <Image src={"/login.png"} alt="login" width={35} height={30}></Image>
       )}
       {text}
     </button>

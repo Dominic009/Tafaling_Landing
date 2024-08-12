@@ -22,18 +22,20 @@ const page = () => {
           <h1 className="font-semibold text-[#08B7EB] text-4xl mb-3">
             Welcome to
           </h1>
-          <Image
-            src="/Tafaling logo.png"
-            alt="Image"
-            width={500}
-            height={200}
-            className="mix-blend-plus-darker"
-          ></Image>
+          <Link href={"/"}>
+            <Image
+              src="/Tafaling logo.png"
+              alt="Image"
+              width={500}
+              height={200}
+              className="mix-blend-plus-darker"
+            ></Image>
+          </Link>
         </div>
 
         {/* Rigth side */}
         <div className="w-[90%] md:w-[70%] lg:w-[50%] mx-auto z-50">
-          <div className="bg-gray-900/30 py-10 rounded-xl flex flex-col items-center">
+          <div className="bg-gray-900/30 backdrop-blur-[2px] py-10 rounded-xl flex flex-col items-center">
             <h1 className="text-3xl text-white border-b-4 border-[#008EAD] mb-8">
               Sign Up
             </h1>

@@ -34,7 +34,7 @@ const page = () => {
         </div>
 
         {/* Rigth side */}
-        <div className="w-[90%] md:w-[70%] lg:w-[50%] mx-auto z-50">
+        <div className="w-[90%] md:w-[70%] lg:w-[60%] mx-auto z-50">
           <div className="bg-gray-900/30 backdrop-blur-[2px] py-10 rounded-xl flex flex-col items-center">
             <h1 className="text-3xl text-white border-b-4 border-[#008EAD] mb-8">
               Sign In

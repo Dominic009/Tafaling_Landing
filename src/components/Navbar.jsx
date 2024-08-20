@@ -5,19 +5,20 @@ import { FaRegNewspaper } from "react-icons/fa6";
 import { BsFillPeopleFill } from "react-icons/bs";
 import { HiOutlineSearch } from "react-icons/hi";
 import { FaRegBell } from "react-icons/fa";
+import Link from "next/link";
 
 const Navbar = () => {
   return (
     <nav className="h-[70px] bg-gradient-to-r from-[#004A99] to-[#003773] flex items-center justify-between px-5">
       {/* Left Side */}
-      <div className="">
+      <Link href={'/'}>
         <Image
           src={"/Tafaling logo.png"}
           width={130}
           height={130}
           alt="Brand logo"
         ></Image>
-      </div>
+      </Link>
 
       {/* Middle Side */}
       <div className="flex gap-9 items-center justify-center fixed left-1/2 transform -translate-x-1/2">

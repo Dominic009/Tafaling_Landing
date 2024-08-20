@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-[#004A99] to-[#00B4DB] p-5">
-      <div>
+      <div className="flex justify-between">
         <Image
           src="/Tafaling logo.png"
           alt="Image"
@@ -14,6 +14,10 @@ export default function Home() {
           height={100}
           className="mix-blend-plus-darker"
         ></Image>
+
+        <div>
+          <Link href={'/home'}><button className="bg-gray-300 px-6 py-2 rounded-lg text-lg font-semibold">Demo</button></Link>
+        </div>
       </div>
       <div className="h-[80vh] flex flex-col items-center justify-center">
         <h1 className="text-3xl md:text-5xl lg:text-7xl font-semibold text-white text-center">
